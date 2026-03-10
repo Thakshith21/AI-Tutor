@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "question": "<p><b>Directions :</b> A, B, C, D, E, F and G are the members of a three-generation family. C is the daughter of A. A is the brother of F. G is the son of D. C is married to D. B is the sister of C. E is the mother of B. F is a female member.</p><p>How is C related to E?</p>",
+        "options": [
+            {"value": "A", "text": "Son"},
+            {"value": "B", "text": "Daughter"},
+            {"value": "C", "text": "Son-in-law"},
+            {"value": "D", "text": "Mother"},
+            {"value": "E", "text": "Sister"}
+        ],
+        "answer": "B"
+    },
+    {
+        "id": 2,
+        "question": "<p><b>Directions :</b> A, B, C, D, E, F and G are the members of a three-generation family. C is the daughter of A. A is the brother of F. G is the son of D. C is married to D. B is the sister of C. E is the mother of B. F is a female member.</p><p>How is D related to F?</p>",
+        "options": [
+            {"value": "A", "text": "Uncle"},
+            {"value": "B", "text": "Brother"},
+            {"value": "C", "text": "Father"},
+            {"value": "D", "text": "Son"},
+            {"value": "E", "text": "None of these"}
+        ],
+        "answer": "A"
+    },
+    {
+        "id": 3,
+        "question": "<p><b>Directions :</b> A, B, C, D, E, F and G are the members of a three-generation family. C is the daughter of A. A is the brother of F. G is the son of D. C is married to D. B is the sister of C. E is the mother of B. F is a female member.</p><p>How is G related to B?</p>",
+        "options": [
+            {"value": "A", "text": "Uncle"},
+            {"value": "B", "text": "Brother"},
+            {"value": "C", "text": "Cousin"},
+            {"value": "D", "text": "Nephew"},
+            {"value": "E", "text": "None of these"}
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 4,
+        "question": "<p><b>Directions :</b> A, B, C, D, E, F and G are the members of a three-generation family. C is the daughter of A. A is the brother of F. G is the son of D. C is married to D. B is the sister of C. E is the mother of B. F is a female member.</p><p>How is E related to F?</p>",
+        "options": [
+            {"value": "A", "text": "Mother"},
+            {"value": "B", "text": "Sister"},
+            {"value": "C", "text": "Aunt"},
+            {"value": "D", "text": "Mother-in-law"},
+            {"value": "E", "text": "None of these"}
+        ],
+        "answer": "C"
+    },
+    {
+        "id": 5,
+        "question": "<p><b>Directions :</b> A, B, C, D, E, F and G are the members of a three-generation family. C is the daughter of A. A is the brother of F. G is the son of D. C is married to D. B is the sister of C. E is the mother of B. F is a female member.</p><p>How is B related to D?</p>",
+        "options": [
+            {"value": "A", "text": "Daughter"},
+            {"value": "B", "text": "Sister"},
+            {"value": "C", "text": "Mother"},
+            {"value": "D", "text": "Wife"},
+            {"value": "E", "text": "None of these"}
+        ],
+        "answer": "A"
+    }
+]

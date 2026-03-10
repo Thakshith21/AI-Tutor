@@ -1,0 +1,193 @@
+/* Ensure the body and html take up the full viewport height */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling of the whole page */
+}
+
+/* Custom classes for full height */
+.stepguide-app {
+    height: 100%;
+    padding: 0; /* Remove padding from container-fluid */
+}
+
+.fill-height {
+    height: 100%;
+    margin: 0; /* Remove margin from row */
+}
+
+
+/* --- LEFT PANE STYLES (Question & Solution) --- */
+
+.left-pane {
+    padding: 15px;
+    display: flex; 
+    flex-direction: column;
+    height: 100%;
+}
+
+.question-panel {
+    /* Set question panel to grow and take all remaining space by default */
+    flex: 1; /* Allow question panel to grow */
+    margin-bottom: 15px;
+    overflow-y: auto; 
+}
+
+.solution-panel {
+    /* Set solution panel to shrink based on content height when open, but allow it to collapse */
+    flex: 0 0 auto; /* Do not grow, base size on content */
+    overflow-y: auto;
+    max-height: 40%;
+}
+
+.solution-panel .panel-heading {
+    cursor: pointer; /* Indicate it's clickable */
+}
+
+/* Ensure the question panel expands when the solution panel is collapsed */
+.solution-panel.panel-collapsed {
+    /* This class can be added/removed by JS if needed, but flexbox usually handles the size change when the content collapses */
+}
+.question-body {
+    font-size: 1.1em;
+    padding-bottom: 0;
+}
+
+.mcq-options {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #eee;
+}
+
+.mcq-options label {
+    display: block; /* Make each option take a new line */
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.solution-body {
+    min-height: 150px; /* Base height */
+    background-color: #fff;
+    padding: 20px;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.solution-body .initial-message {
+    color: #999;
+    text-align: center;
+    margin-top: 20%;
+}
+
+/* --- RIGHT PANE STYLES (Chat Window) --- */
+
+.right-pane {
+    padding: 0; /* No padding to make the chat container fill the whole pane */
+    height: 100%;
+    border-left: 1px solid #ddd; /* Separator line */
+}
+
+.chat-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #e5ddd5; /* Whatsapp-like background color */
+}
+
+.chat-header {
+    background-color: #075e54; /* Whatsapp-like header color */
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    flex: 0 0 auto; /* Do not grow or shrink */
+}
+
+.chat-body {
+    flex: 1; /* Takes up all available vertical space */
+    padding: 10px;
+    overflow-y: auto; /* Enable scrolling for messages */
+}
+
+.chat-footer {
+    padding: 10px;
+    background-color: #f0f0f0;
+    flex: 0 0 auto; /* Do not grow or shrink */
+}
+
+/* Message Bubble Styles */
+.message {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+.message .user-name {
+    font-size: 0.85em;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.message-content {
+    padding: 8px 12px;
+    border-radius: 7px;
+    word-wrap: break-word;
+    position: relative;
+    box-shadow: 0 1px 0.5px rgba(0, 0, 0, 0.13);
+}
+
+.message-time {
+    font-size: 0.75em;
+    color: #999;
+    align-self: flex-end;
+    margin-top: 2px;
+}
+
+/* AI Tutor Message */
+.tutor-message {
+    align-self: flex-start;
+}
+
+.tutor-message .user-name {
+    color: #128c7e; /* Green for Tutor */
+    align-self: flex-start;
+}
+
+.tutor-message .message-content {
+    background-color: #dcf8c6; /* Light green bubble */
+    border: 1px solid #a8c199;
+}
+
+/* User Message (Will be added via JavaScript) */
+.user-message {
+    align-self: flex-end;
+}
+
+.user-message .user-name {
+    color: #34b7f1; /* Blue for User */
+    align-self: flex-end;
+}
+
+.user-message .message-content {
+    background-color: #ffffff; /* White bubble */
+    border: 1px solid #e0e0e0;
+}
+
+
+/* Pulse animation for the microphone */
+.mic-active {
+    color: #fff;
+    background-color: #d9534f; /* Bootstrap danger red */
+    border-color: #d43f3a;
+    animation: pulse-red 1.5s infinite;
+}
+
+@keyframes pulse-red {
+    0% { box-shadow: 0 0 0 0 rgba(217, 83, 79, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(217, 83, 79, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(217, 83, 79, 0); }
+}
+
